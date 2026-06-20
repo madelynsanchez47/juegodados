@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triple Fortuna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <form>
+                <div>
+                    <label for="j1">Nombre del pprimer jugador:</label>
+                    <input type="text" id="j1">
+                </div>
+                <div>
+                    <label for="j2">Nombre del segundo jugador:</label>
+                    <input type="text" id="j2">
+                </div>
+                <div>
+                    <label for="rondas">Numero de rondas</label>
+                    <input type="number" id="rondas">
+                </div>
+                <div>
+                    <button type ="button" id="btnComenzar"x>Haga click para comenzar el juego</button>
+                </div>
+            </form>
+                <div>
+                    <label for="Ganador">Ganador</label>
+                    <input type="text" id="Resultado">
+                
+                    <p>¿Quieres jugar otra vez?</p>
+
+                    <button type ="button" id="btnSI"x>SI</button>
+                    <button type ="button" id="btnNO"x>NO</button>
+                </div>
+        </section>
+        <section>
+            <div class="panel">
+                <div class="jugador">
+                    <p>Jugador 1: <span id="nj1"></span></p>
+                    <p>Puntaje: <span id="puntaje1">0</span></p>
+                </div> 
+                <div class="dados">
+                    <img id="img1j1" src="imagenes/dadocara.png" alt="">
+                    <img id="img2j1" src="imagenes/dadocara.png" alt="">
+                    <img id="img3j1" src="imagenes/dadocara.png" alt="">
+                </div>
+                <div class="boton">
+                    <button id="btnj1" class="btn" type="button" disabled>Lanzar los dados</button>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="jugador">
+                    <p>Jugador 2: <span id="nj2"></span></p>
+                    <p>Puntaje: <span id="puntaje2">0</span></p>
+                </div>
+                <div class="dados">
+                    <img id="img1j2" src="imagenes/dadocara.png" alt="">
+                    <img id="img2j2" src="imagenes/dadocara.png" alt="">
+                    <img id="img3j2" src="imagenes/dadocara.png" alt="">
+                </div>
+                <div class="boton">
+                    <button id="btnj2" class="btn" type="button" disabled>Lanzar los dados</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
